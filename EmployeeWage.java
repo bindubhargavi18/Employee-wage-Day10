@@ -2,10 +2,7 @@ class EmployeeWage
 {
 	final static int fullTime=1;
 	final static int partTime=2;
-	static int empWageHr=20;
-	static int workingDaysMonth=20;
-	static int maxHrsInMonth=100;
-	static void empWageCal()
+	static int empWageCal(String company,int empWageHr,int workingDaysMonth,int maxHrsInMonth)
 	{
 	    int empHrs=0;
 	    int empWage=0;
@@ -34,7 +31,7 @@ class EmployeeWage
 	    	totalWage+=empWage;
 		}
 		
-		System.out.println("Employee wage: "+empWage);
-		System.out.println("Total employee wage: "+totalWage);
+		
+		return totalWage;
 	}
 }
