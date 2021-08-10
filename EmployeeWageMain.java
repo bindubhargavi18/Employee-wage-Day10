@@ -14,8 +14,8 @@ class EmployeeWageMain
 		int empHrs=0;
 	    int empWage=0;
 	    int totalWage=0;
-		int emp=(int) Math.floor(Math.random()*10)%3;
-		switch(emp)
+	    int emp=(int) Math.floor(Math.random()*10)%3;
+	    switch(emp)
 		{
 		   case fullTime:empHrs=8;
 				         System.out.println("Employee is present and is full time");
