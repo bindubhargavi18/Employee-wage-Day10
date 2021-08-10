@@ -18,11 +18,11 @@ class EmployeeWageMain
 	    switch(emp)
 		{
 		   case fullTime:empHrs=8;
-				 System.out.println("Employee is present and is full time");
-			         empWage=empHrs*empWageHr;
-			         totalWage=empWage*workingDays;
-			         System.out.println("Salary for a month: "+totalWage);
-			         break;
+		                 System.out.println("Employee is present and is full time");
+			             empWage=empHrs*empWageHr;
+			             totalWage=empWage*workingDays;
+			             System.out.println("Salary for a month: "+totalWage);
+			             break;
 		
 		   case partTime:empHrs=4;
 			         System.out.println("Employee is present and is part time");
