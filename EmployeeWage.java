@@ -16,22 +16,20 @@ class EmployeeWage
 	    	switch(emp)
 	    	{
 	    		case fullTime:
-	    				empHrs=8;
-	    				break;
+	    			empHrs=8;
+	    			break;
 	    		
 	    		case partTime:
-	    				empHrs=4;
-	    				break;
+	    			empHrs=4;
+	    			break;
 
 	    		default:
-	    				empHrs=0;
+	    			empHrs=0;
 	    	}
 	    	totalEmpHrs+=empHrs;
 	    	empWage=totalEmpHrs*empWageHr;
 	    	totalWage+=empWage;
 		}
-		
-		
 		return totalWage;
 	}
 }
