@@ -2,7 +2,18 @@ class EmployeeWage
 {
 	final static int fullTime=1;
 	final static int partTime=2;
-	static int empWageCal(String company,int empWageHr,int workingDaysMonth,int maxHrsInMonth)
+	private String company;
+	private int empWageHr;
+	private int workingDaysMonth;
+	private int maxHrsInMonth;
+	EmployeeWage(String company,int empWageHr,int workingDaysMonth,int maxHrsInMonth)
+	{
+		this.company=company;
+		this.empWageHr=empWageHr;
+		this.workingDaysMonth=workingDaysMonth;
+		this.maxHrsInMonth=maxHrsInMonth;
+	}
+	int empWageCal()
 	{
 	    int empHrs=0;
 	    int empWage=0;
@@ -29,7 +40,7 @@ class EmployeeWage
 	    	totalEmpHrs+=empHrs;
 	    	empWage=totalEmpHrs*empWageHr;
 	    	totalWage+=empWage;
-		}
-		return totalWage;
+	    }
+	    return totalWage;
 	}
 }
